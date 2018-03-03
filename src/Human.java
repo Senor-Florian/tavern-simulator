@@ -69,6 +69,15 @@ public class Human {
         }
     }
 
+    public void banter(Human human) {
+        if(Bouncer.workingBouncers > 0) {
+            System.out.println(name + " was thrown out for bantering.");
+            goHome();
+        } else {
+            System.out.println("Your mother sucks dwarf cock, " + human.getName() + " - said " + name + ".");
+        }
+    }
+
     public String getName() {
         return name;
     }

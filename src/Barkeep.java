@@ -14,4 +14,8 @@ public class Barkeep extends Human {
             System.out.println("There are no dirty glasses.");
         }
     }
+
+    public static void getDirtyGlasses() {
+        System.out.println("Number of dirty glasses: " + dirtyGlasses);
+    }
 }
