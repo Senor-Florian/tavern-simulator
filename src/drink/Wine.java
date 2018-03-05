@@ -12,13 +12,12 @@ public class Wine extends Beverage {
     /**
      * Constructor of the Wine class.
      * @param price The price of the wine.
-     * @param alcoholStrength The alcohol strength of the wine.
      * @param vintage The year which the wine is from.
      * @param type The type of the wine.
      */
 
-    public Wine(int price, int alcoholStrength, int vintage, String type) {
-        super(price, alcoholStrength);
+    public Wine(int vintage, String type) {
+        super(10, 10);
         this.vintage = vintage;
         this.type = type;
     }

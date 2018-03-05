@@ -15,7 +15,7 @@ public class Aszu extends Wine {
      */
 
     public Aszu(int vintage, int grapeBasket) {
-        super(10, 10, vintage, "aszú");
+        super(vintage, "aszú");
         this.grapeBasket = grapeBasket;
     }
 
