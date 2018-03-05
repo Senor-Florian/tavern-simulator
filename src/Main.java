@@ -1,3 +1,5 @@
+import drink.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -46,11 +48,32 @@ public class Main {
         seamus.cleanGlass();
 
         Barkeep.getDirtyGlasses();
-
         fianna.banter(seamus);
         aengus.goHome();
 
         System.out.println(aengus);
         System.out.println(fianna);
+
+        /**
+         * Creates wine objects from the arguments.
+         */
+
+        if(args[0].equals("Aszú")) {
+            Aszu aszu = new Aszu(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
+            printWine(aszu);
+        } else {
+            Wine wine = new Wine(10, 10, Integer.parseInt(args[1]), args[0]);
+            printWine(wine);
+        }
+
+    }
+
+    /**
+     *
+     * @param wine Prints out the wine objects.
+     */
+
+    static void printWine(Wine wine) {
+        System.out.println(wine);
     }
 }

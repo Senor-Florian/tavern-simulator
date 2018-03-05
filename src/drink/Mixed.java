@@ -1,3 +1,5 @@
+package drink;
+
 public class Mixed extends Beverage {
 
     public Mixed(Beverage b1, Beverage b2) {

@@ -1,3 +1,5 @@
+import drink.Beverage;
+
 public class Bouncer extends Human{
 
     private boolean isWorking;

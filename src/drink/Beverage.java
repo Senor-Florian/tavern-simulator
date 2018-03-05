@@ -1,3 +1,5 @@
+package drink;
+
 public class Beverage {
 
     private int price;
@@ -26,7 +28,7 @@ public class Beverage {
 
     @Override
     public String toString() {
-        return "Beverage{" +
+        return "drink.Beverage{" +
                 "price=" + price +
                 ", alcoholStrength=" + alcoholStrength +
                 '}';

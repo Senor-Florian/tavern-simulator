@@ -1,3 +1,5 @@
+import drink.Beverage;
+
 public class Human {
 
     private String name;
